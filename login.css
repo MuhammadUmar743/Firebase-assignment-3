@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141E30, #243B55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  overflow: hidden;
+  padding: 20px; /* added for spacing on small screens */
+}
+
+/* Elegant glassmorphic container */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+form:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+h4 {
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: 400;
+  color: #cfd8dc;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px #00c6ff;
+}
+
+/* Button glow animation */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px #0072ff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 15px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Floating stars background for emotional luxury feel */
+@keyframes stars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+.stars {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  animation: stars 30s linear infinite;
+  box-shadow: 
+    50px 100px white, 
+    150px 200px white, 
+    250px 300px white, 
+    350px 400px white, 
+    450px 500px white;
+}
+form {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
